@@ -1,0 +1,46 @@
+{% extends "template.html" %}
+
+{% block content %}
+
+<h2 class="main-title">Upcoming <div class="link-color">Events</div></h2>
+
+<ul>
+    {% for event in upcoming_events %}
+		<li class="event">
+			<div class="space"><p> </p></div>
+			{{ event.title }} – {{ event.date }}
+			<br>
+            <div class="event-button"><a href="{% url 'event_detail' event.id %}">
+				<button>View More</button>
+			</a></div>
+	    	<div class="event-button"><a href="{% url 'rsvp' event.id %}">
+				<button>RSVP Now</button>
+			</a></div>
+        </li>
+
+    {% empty %}
+        <li class="empty-text1">No upcoming events.</li>
+	<li class="empty-text2">Check back later for any updates!</li>
+    {% endfor %}
+</ul>
+
+<br><br><br>
+
+<h2 class="main-title">Past <div class="link-color">Events</div></h2>
+
+<ul>
+    {% for event in past_events %}
+    	<li class="event">
+			<div class="space"><p> </p></div>
+			{{ event.title }} – {{ event.date }}
+			<br>
+			<div class="event-button"><a href="{% url 'event_detail' event.id %}">
+				<button>View Details</button>
+			</div></a>
+    	</li>
+    {% empty %}
+    	<li class="empty-text3">No past events yet.</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

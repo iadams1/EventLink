@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="rsvp-now">
+    <h2>RSVP for <div class="link-color">{{ event.title }}</div></h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="event-button"><button type="submit">Confirm RSVP</button></div>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="event-detail">
+    <h2>{{ event.title }}</h2>
+
+    <p><strong>Category:</strong> {{ event.category }}</p>
+
+    <p><strong>Location:</strong> {{ event.location }}</p>
+
+    <p><strong>Date:</strong> {{ event.date }} at {{ event.time }}</p>
+
+    <div class="rsvp-line"><p><strong>Number of RSVPs:</strong> {{ rsvp_count }}</p></div>
+
+    <br>
+
+    <div class="ed-description"><p>{{ event.description }}</p></div>
+
+    {% if is_past %}
+        <div class="empty-text1"><p>This event has already taken place.</p></div>
+    {% else %}
+        <div class="event-button"><a href="{% url 'rsvp' event.id %}">
+            <button>RSVP Now</button>
+        </a></div>
+    {% endif %}
+</div>
+
+{% endblock %}

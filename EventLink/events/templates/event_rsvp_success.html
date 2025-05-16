@@ -1,0 +1,10 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="rsvp-success">
+    <h2>You're Signed Up!</h2>
+    <p>Thanks for RSVPing! We'll see you at the event.</p>
+    <div class="link-color"><a href="{% url 'event_list' %}">← Back to Events</a></div>
+</div>
+
+{% endblock %}

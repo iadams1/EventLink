@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131314;
+    overflow-x: hidden;
+}
+
+/* Styles for Header */
+header h1{
+    color: rgb(226, 226, 226);
+    font-size: 2rem;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    line-height: 190px;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 10px;
+}
+
+/* Styles for the Navagation */
+.link-color {
+    background: linear-gradient(to right, rgb(146, 147, 219), rgb(56, 111, 170));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-grid;
+    text-indent: 5px;
+    font-weight: 700;
+    font-style: italic;
+    padding-right: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    line-height: 0px;
+    margin-top: -35px;
+    padding-bottom: 90px;
+}
+.links {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px 8px;
+    padding-right: 20px;
+}
+
+.links li a {
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(226, 226, 226);
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.links li a:after {
+    content: " ";
+    position: absolute;
+    background: linear-gradient(to right,rgb(146, 147, 219), rgb(56, 111, 170));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.links li a:hover:after{
+    width: 100%;
+}
+
+/* Styles for Footer */
+footer {
+    background: linear-gradient(45deg, #9293db, rgb(56, 111, 170));
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer p {
+    color: #131314;
+    padding: 7px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+
+/* Styles for Main */
+.main-title {
+    color: rgb(226, 226, 226);
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.empty-text1 {
+    color: rgba(226, 226, 226, 0.353);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-top: 90px;
+}
+
+.empty-text2 {
+    color: rgba(226, 226, 226, 0.353);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-bottom: 90px;
+}
+
+.empty-text3 {
+    color: rgba(226, 226, 226, 0.353);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Styles for Events-List */
+.event {
+    color: rgb(226, 226, 226);
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 25px;
+    padding: 25px;
+}
+
+.event-button {
+    padding: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-button button {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #9293db, rgb(56, 111, 170));
+    cursor: pointer;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(226, 226, 226);
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    font-weight: light;
+}
+
+.event-button button::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 40px;
+    background-color: #131314;
+    z-index: -1;
+    transition: 200ms
+}
+
+.space {
+    padding: 15px;
+}
+
+/* Styles for Event Details */
+.event-detail {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: center;
+}
+
+.event-detail h2 {
+    background: linear-gradient(to right, rgb(146, 147, 219), rgb(56, 111, 170));
+    -webkit-background-clip: text;
+    background-clip: text;
+    display:inline-flex;
+    color: transparent;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    padding-right: 20px;
+}
+
+.event-detail p {
+    color: rgb(226, 226, 226);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ed-description {
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+.rsvp-line {
+    padding-top: 20px;
+}
+
+.event-detail .event-button {
+    padding-top: 30px;
+}
+
+.event-detail .empty-text1 p {
+    font-style: italic;
+    color: rgba(226, 226, 226, 0.435);
+}
+
+/* Styles for RSVP Form */
+.rsvp-now {
+    text-align: center;
+}
+
+.rsvp-now h2 {
+    color: rgb(226, 226, 226);
+    font-size: 2rem;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.rsvp-now form {
+    padding-top: 30px;
+    color: rgb(226, 226, 226);
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rsvp-now input {
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: #131314;
+    margin-bottom: 20px;
+
+    color: rgb(226, 226, 226);
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.rsvp-now input:focus {
+    border: 3px solid #9293db;
+}
+
+/* Styles for RSVP Success */
+.rsvp-success {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.rsvp-success h2 {
+    color: rgb(226, 226, 226);
+    font-size: 2rem;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.rsvp-success p {
+    padding-top: 30px;
+    color: rgb(226, 226, 226);
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rsvp-success .link-color a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Bebas Neue';
+    padding-top: 30px;
+    font-size: 30px;
+}

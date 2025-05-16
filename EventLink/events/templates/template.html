@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EventLink</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="icon" href="{% static 'assets/favicon.png' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'event_list' %}">Event<div class="link-color">Link</div></a></h1>
+    </header>
+
+    <nav class="menu">
+        <ul class="links">
+            <li><a href="">Home</a></li>
+            <li><a href="{% url 'event_list' %}">Events</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        {% block content %}{% endblock %}
+        <div class="space"><p> </p></div>
+    </main>
+
+    <footer>
+        <p>&copy; Event Link</p>
+    </footer>
+</body>
+</html>
