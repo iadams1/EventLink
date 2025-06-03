@@ -1,75 +1,84 @@
-# Event Link 
-> **Last Updated:** June 2, 2025
+# _**Event Link**_
+> **Last Updated:** June 3rd, 2025
 
 ## Project Summary
-_Event Link_ is a self made website thats tailored for groups of students/individuals to sign up for their local events. 
+**Event Link** is a self-developed web application designed to help individuals and student groups easily discover and register for local events. The platform serves as a centralized hub, eliminating the need to browse multiple platforms to find relevant events.
 
 ### Website Features
-- Able to see past, present, and upcoming events
-- Quickly RSVP with events on the events page or RSVPing with an event from the more details page
-- Seeing how many users has RSVP with events from more details page with a speciific event
-  + Displays text for past events informing users that RSVP is unavailable since the event has pasted
-- Stores information within a database such as individuals names and emails as well as every event created
-- Displays detailed text when there are no upcoming events and/or no past events within the system
-- A clean and modern site design that catchs the users engagement
+- View **past**, **current**, and **upcoming** events  
+- RSVP directly from the **event list** or **event details** page  
+- View RSVP count per event via the details page  
+  - Past events are labeled and RSVP is disabled  
+- Stores data such as names, emails, and event details in a database  
+- Displays helpful messages when no events are available  
+- Clean, modern UI optimized for user engagement  
 
-I came up with this idea for a class final where we needed to use all of our knowledge from what we learned in class to implement it all in one project. I wanted to create a main area for communities to share their events with others in one space without other users crossing to other platforms to find events that fit for them. 
+> I came up with this idea for a class final where we needed to use all of our knowledge from what we learned in class to implement it all in one project. I wanted to create a main area for communities to share their events with others in one space without other users crossing to other platforms to find events that fit for them. 
+
+---
 
 ### Coding Languages Used:
-- Python
-- Django (Python Framework)
+- **Python**
+- **Django** (Python Framework)
+
+---
 
 ## Getting Started
-With this project using Django for the framework, you have to make sure that it's installed properly. 
+To run this project locally, follow the instructions below. The project is built using the Django web framework.
 
 ### Prerequisites
-You should have python already installed on your designated device. You can find an installation guide on Python's official website to install if you haven't already. 
+Ensure that **Python** is installed on your system. If not, refer to the [official Python installation guide](https://www.python.org/downloads/).
 
 ### Installation
 Now we'll be installing Django properly which is the only installation, after python, needed for this project to work. 
 
-1. Installing django. Open command prompt on your device and input this code: 
+1. **Installing Django**
+Open your terminal or command prompt and run:
 ```
 py -m pip install Django==5.2.1
 ```
 Aftewards, you should be ready to go to run the project. If you want to run the website, continue with the installation section.
 
-2. While still in command prompt, change your directory to where the project is located. Make sure that is one file outside the event link folder.
-   
-Heres an example of what your line should look like:
+2. **Navigate to the Project Directory**
+Change into the directory where the project is located:
 ```
 cd [... full location line where project is being stored ...]\EventLink
 ```
 
-3. Now we'll be making migrations to ensure that the database as been created for the system.
-
-Use the first line. After, it has been ran, use the second one. 
+3. **Run Migrations**
+Initialize the database by running:
 ```
 py manage.py makemigrations
 
 py manage.py migrate
 ```
 
-4. Inorder for you to access the database, we need to create superuser. Input the line of code and follow the directions once entered.
+4. **Create a Superuser**
+To access the Django admin dashboard:
 ```
 py manage.py createsuperuser
 ```
-5. Once the super user has been created, you are now ready to run the site using this line.
+Follow the prompts to set a username, email, and password.
+
+5. **Launch the Development Server**
+Once setup is complete, start the server:
 ```
 py manage.py runserver
 ```
-Now you have fully installed the project's nessessary requirements and are ready to use it to it's full potential. 
+The application is now up and running!
 
 ## Usage
-The project be used as a simple area for students to find local events within their school as well as a managing system to keep records of every event being hosted.
+**Event Link** serves as an intuitive platform for students and local communities to find, RSVP to, and manage events within their network. The system also acts as an administrative tool for tracking hosted events.
 
 ## Contact
 ### Created by: Isaiah Adams
-If you reached this far, Hello! I'm a undergraduate student at Arkansas Tech University whose studying in Computer Science as well as a minor in Business Administration. A goal of mine is to continue to create amazing projects like this one to not only showcase my current skills in coding but to also build the foundation for my aspiring career in software engineering. 
+>LinkedIn: www.linkedin.com/in/isaiah-j-adams
+>
+>Email: IJAdams1@outlook.com
 
-I've included my email and other social links to get in contact with me if you have any questions.
+Hi there! I'm Isaiah, an undergraduate Computer Science major at Arkansas Tech University with a minor in Business Administration. My passion lies in developing meaningful software that connects people and solves real-world problems. Projects like this one allow me to apply classroom knowledge in a practical and impactful way, as I work toward a career in software engineering.
 
-[LinkedIn ](www.linkedin.com/in/isaiah-j-adams) - Email: IJAdams1@outlook.com
+Feel free to reach out—I’d love to connect or answer any questions you may have.
 
 
 
