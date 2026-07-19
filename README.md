@@ -76,7 +76,7 @@ The application is now up and running!
 >
 >Email: IJAdams1@outlook.com
 
-Hi there! I'm Isaiah, an undergraduate Computer Science major at Arkansas Tech University with a minor in Business Administration. My passion lies in developing meaningful software that connects people and solves real-world problems. Projects like this one allow me to apply classroom knowledge in a practical and impactful way, as I work toward a career in software engineering.
+Hi there! I'm Isaiah, a Graduate at Arkansas Tech University with Bachelors of Science in Computer Science. My passion lies in developing meaningful software that connects people and solves real-world problems. Projects like this one allow me to apply classroom knowledge in a practical and impactful way, as I work toward a career in software engineering.
 
 Feel free to reach out—I’d love to connect or answer any questions you may have.
 
