@@ -4,6 +4,13 @@
 ## Project Summary
 **Event Link** is a self-developed web application designed to help individuals and student groups easily discover and register for local events. The platform serves as a centralized hub, eliminating the need to browse multiple platforms to find relevant events.
 
+## Screenshots
+
+### Home Page
+The EventLink home page provides students with a centralized view of available campus events and activities.
+
+![EventLink Home Page](screenshots/home-page.png)
+
 ### Website Features
 - View **past**, **current**, and **upcoming** events  
 - RSVP directly from the **event list** or **event details** page  
