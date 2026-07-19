@@ -1,5 +1,5 @@
 # _**Event Link**_
-> **Last Updated:** June 3rd, 2025
+> **Last Updated:** July 18th, 2026
 
 ## Project Summary
 **Event Link** is a self-developed web application designed to help individuals and student groups easily discover and register for local events. The platform serves as a centralized hub, eliminating the need to browse multiple platforms to find relevant events.
