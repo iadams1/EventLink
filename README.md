@@ -9,7 +9,7 @@
 ### Home Page
 The EventLink home page provides students with a centralized view of available campus events and activities.
 
-![EventLink Home Page](screenshots/home-page.png)
+![EventLink Home Page](EventLink/events/static/assets/home.png)
 
 ### Website Features
 - View **past**, **current**, and **upcoming** events  
